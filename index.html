@@ -7,8 +7,20 @@
   </head>
   <body>
 
+    <h1>Game of Thrones</h1>
+	<ul class="character-list-container"></ul>
 
-    
+
+	<script id="character-list-container" type="text/x-handlebars-template">
+		<li class="character">
+			<img src="images/{{shortCode}}.jpg">
+			<h2>{{name}}</h2>
+			<p>Actor: {{actor}}</p>
+			<p>House: {{house}}</p>
+			<p>Whereabouts: {{location}}</p>
+		</li>
+	</script>
+
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
